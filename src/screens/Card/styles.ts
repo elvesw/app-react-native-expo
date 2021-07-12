@@ -19,7 +19,7 @@ export const Button = styled.TouchableOpacity`
 	height: 48px;
 	background-color: #ff9000;
 	border-radius: 10px;
-	margin-top: 8px;
+	margin-top: 50px;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: row;
