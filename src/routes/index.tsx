@@ -1,14 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import AppRoutes from './app.routes';
 
 const Routes: React.FC = () => {
-	return (
-		<View>
-			<Text style={{ color: '#BDC3C7', fontSize: 18 }}>
-				Primeiro screen teste
-			</Text>
-		</View>
-	);
+	return <AppRoutes />;
 };
 
 export default Routes;
