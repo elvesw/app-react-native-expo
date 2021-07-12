@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { View, Text, TouchableOpacity } from 'react-native';
+
+import { Container, Title, Button, ButtonText } from './styles';
 
 const Dashboard: React.FC = () => {
 	const { navigate } = useNavigation();
@@ -10,28 +11,13 @@ const Dashboard: React.FC = () => {
 	}, []);
 
 	return (
-		<View
-			style={{
-				flex: 1,
-				alignItems: 'center',
-				justifyContent: 'center',
-				paddingHorizontal: 8,
-				paddingVertical: 30,
-				backgroundColor: '#222831',
-			}}
-		>
-			<TouchableOpacity
-				onPress={navigateToCard}
-				style={{
-					backgroundColor: '#FF9000',
-					width: '100%',
-					height: 48,
-					borderRadius: 10,
-				}}
-			>
-				<Text>ir para screen CARD</Text>
-			</TouchableOpacity>
-		</View>
+		<Container>
+			<Title>Screen Dashboard</Title>
+
+			<Button onPress={navigateToCard}>
+				<ButtonText>ir para screen CARD</ButtonText>
+			</Button>
+		</Container>
 	);
 };
 
