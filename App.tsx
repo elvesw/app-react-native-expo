@@ -7,7 +7,7 @@ import Routes from './src/routes';
 const App: React.FC = () => {
 	return (
 		<NavigationContainer>
-			<View style={{ flex: 1, backgroundColor: '#585858' }}>
+			<View style={{ flex: 1 }}>
 				<Routes />
 			</View>
 		</NavigationContainer>

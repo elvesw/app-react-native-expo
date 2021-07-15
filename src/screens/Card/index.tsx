@@ -8,7 +8,7 @@ const Card: React.FC = () => {
 	const { navigate } = useNavigation();
 
 	const navigateToDashboard = useCallback(() => {
-		navigate('Dashboard');
+		navigate('Post');
 	}, []);
 
 	return (
@@ -22,7 +22,7 @@ const Card: React.FC = () => {
 					color="#312e38"
 					style={{ marginHorizontal: 12 }}
 				/>
-				<ButtonText>DASHBOARD</ButtonText>
+				<ButtonText>CREATE POST</ButtonText>
 			</Button>
 		</Container>
 	);

@@ -4,28 +4,28 @@ import { FontAwesome5 as Icon } from '@expo/vector-icons';
 
 import { Container, Title, Button, ButtonText } from './styles';
 
-const Dashboard: React.FC = () => {
+const PostCreatedSuccessfully: React.FC = () => {
 	const { navigate } = useNavigation();
 
-	const navigateToCard = useCallback(() => {
-		navigate('Survey');
+	const navigateToDashboard = useCallback(() => {
+		navigate('Dashboard');
 	}, []);
 
 	return (
 		<Container>
-			<Title>Screen Dashboard</Title>
+			<Title>Screen PostCreatedSuccessfully</Title>
 
-			<Button onPress={navigateToCard}>
+			<Button onPress={navigateToDashboard}>
 				<Icon
-					name="id-card"
+					name="home"
 					size={20}
 					color="#312e38"
 					style={{ marginHorizontal: 12 }}
 				/>
-				<ButtonText>Survey</ButtonText>
+				<ButtonText>GO BACK DASHBOARD</ButtonText>
 			</Button>
 		</Container>
 	);
 };
 
-export default Dashboard;
+export default PostCreatedSuccessfully;
